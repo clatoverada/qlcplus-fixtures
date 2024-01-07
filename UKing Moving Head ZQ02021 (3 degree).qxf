@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.4</Version>
+  <Author>Wildcat Hendricks</Author>
+ </Creator>
+ <Manufacturer>UKing</Manufacturer>
+ <Model>3 Grad Moving Head ZQ02021</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Pan" Preset="PositionPan"/>
+ <Channel Name="Pan Fine" Preset="PositionPanFine"/>
+ <Channel Name="Tilt" Preset="PositionTilt"/>
+ <Channel Name="Tilt Fine" Preset="PositionTiltFine"/>
+ <Channel Name="Tilt/Pan speed" Preset="SpeedPanTiltFastSlow"/>
+ <Channel Name="Level" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Strobe" Preset="ShutterStrobeSlowFast"/>
+ <Channel Name="Color">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="15">White</Capability>
+  <Capability Min="16" Max="31">Color 1</Capability>
+  <Capability Min="32" Max="47">Color 2</Capability>
+  <Capability Min="48" Max="63">Color 3</Capability>
+  <Capability Min="64" Max="79">Color 4</Capability>
+  <Capability Min="80" Max="95">Color 5</Capability>
+  <Capability Min="96" Max="111">Color 6</Capability>
+  <Capability Min="112" Max="127">Color 7</Capability>
+  <Capability Min="128" Max="191">Clockwise Rotate (Fast to Slow)</Capability>
+  <Capability Min="192" Max="255">Counter Clockwise Rotate (Slow to Fast)</Capability>
+ </Channel>
+ <Channel Name="Gobo">
+  <Group Byte="0">Gobo</Group>
+  <Capability Min="0" Max="7" Preset="GoboMacro" Res1="SGM/gobo00037.svg">Open</Capability>
+  <Capability Min="8" Max="15">Gobo 1</Capability>
+  <Capability Min="16" Max="23">Gobo 2</Capability>
+  <Capability Min="24" Max="31">Gobo 3</Capability>
+  <Capability Min="32" Max="39">Gobo 4</Capability>
+  <Capability Min="40" Max="47">Gobo 5</Capability>
+  <Capability Min="48" Max="55">Gobo 6</Capability>
+  <Capability Min="56" Max="63">Gobo 7</Capability>
+  <Capability Min="64" Max="73">Gobo 7 Shake (Slow to Fast)</Capability>
+  <Capability Min="74" Max="82">Gobo 6 Shake (Slow to Fast)</Capability>
+  <Capability Min="83" Max="91">Gobo 5 Shake (Slow to Fast)</Capability>
+  <Capability Min="92" Max="100">Gobo 4 Shake (Slow to Fast)</Capability>
+  <Capability Min="101" Max="109">Gobo 3 Shake (Slow to Fast)</Capability>
+  <Capability Min="110" Max="118">Gobo 2 Shake (Slow to Fast)</Capability>
+  <Capability Min="119" Max="127">Gobo 1 Shake (Slow to Fast)</Capability>
+  <Capability Min="128" Max="191">Clockwise Rotate (Fast toSlow)</Capability>
+  <Capability Min="192" Max="255">Counter Clockwise Rotate (Slow to Fast)</Capability>
+ </Channel>
+ <Channel Name="Prism">
+  <Group Byte="0">Prism</Group>
+  <Capability Min="0" Max="7">Close Prism</Capability>
+  <Capability Min="8" Max="127">Open Prism</Capability>
+  <Capability Min="128" Max="255">Prism Rotate Slow to Fast</Capability>
+ </Channel>
+ <Channel Name="Macro">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="49">unknown</Capability>
+  <Capability Min="50" Max="200">unknown</Capability>
+  <Capability Min="201" Max="255">Sound Mode</Capability>
+ </Channel>
+ <Channel Name="Reset">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="240">No Function</Capability>
+  <Capability Min="241" Max="255">Reset</Capability>
+ </Channel>
+ <Mode Name="12 Channel">
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Pan Fine</Channel>
+  <Channel Number="2">Tilt</Channel>
+  <Channel Number="3">Tilt Fine</Channel>
+  <Channel Number="4">Tilt/Pan speed</Channel>
+  <Channel Number="5">Level</Channel>
+  <Channel Number="6">Strobe</Channel>
+  <Channel Number="7">Color</Channel>
+  <Channel Number="8">Gobo</Channel>
+  <Channel Number="9">Prism</Channel>
+  <Channel Number="10">Macro</Channel>
+  <Channel Number="11">Reset</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="1700" ColourTemperature="0"/>
+  <Dimensions Weight="3.1" Width="220" Height="330" Depth="220"/>
+  <Lens Name="Other" DegreesMin="3" DegreesMax="3"/>
+  <Focus Type="Head" PanMax="540" TiltMax="180"/>
+  <Technical PowerConsumption="100" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
