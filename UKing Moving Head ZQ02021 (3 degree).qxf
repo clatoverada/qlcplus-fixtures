@@ -7,7 +7,7 @@
   <Author>Wildcat Hendricks</Author>
  </Creator>
  <Manufacturer>UKing</Manufacturer>
- <Model>3 Grad Moving Head ZQ02021</Model>
+ <Model>3 Grad Moving Head (ZQ02021)</Model>
  <Type>Moving Head</Type>
  <Channel Name="Pan" Preset="PositionPan"/>
  <Channel Name="Pan Fine" Preset="PositionPanFine"/>
