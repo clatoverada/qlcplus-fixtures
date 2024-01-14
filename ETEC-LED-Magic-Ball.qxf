@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.4</Version>
+  <Author>Wildcat Hendricks</Author>
+ </Creator>
+ <Manufacturer>ETEC</Manufacturer>
+ <Model>LED Magic Ball</Model>
+ <Type>Flower</Type>
+ <Channel Name="Master Dimmer" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Colormix 1" Preset="IntensityRed"/>
+ <Channel Name="Colormix 2" Preset="IntensityGreen"/>
+ <Channel Name="Colormix 3" Preset="IntensityBlue"/>
+ <Channel Name="Strobe" Preset="ShutterStrobeSlowFast"/>
+ <Channel Name="Rotation" Preset="PrismRotationSlowFast"/>
+ <Channel Name="Color macro" Preset="ColorMacro"/>
+ <Mode Name="7 Kanal">
+  <Channel Number="0">Master Dimmer</Channel>
+  <Channel Number="1">Colormix 1</Channel>
+  <Channel Number="2">Colormix 2</Channel>
+  <Channel Number="3">Colormix 3</Channel>
+  <Channel Number="4">Strobe</Channel>
+  <Channel Number="5">Rotation</Channel>
+  <Channel Number="6">Color macro</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="1" Width="190" Height="190" Depth="170"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="3" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
