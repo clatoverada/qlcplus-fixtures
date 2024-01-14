@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.4</Version>
+  <Author>Wildcat Hendricks</Author>
+ </Creator>
+ <Manufacturer>Showtec</Manufacturer>
+ <Model>Technoflash 168</Model>
+ <Type>Strobe</Type>
+ <Channel Name="Control">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="5">Shutter</Capability>
+  <Capability Min="6" Max="240">Strobe (slow to fast)</Capability>
+  <Capability Min="241" Max="250">LEDs Full ON (max. 15 minutes)</Capability>
+  <Capability Min="251" Max="255">Music Controlled</Capability>
+ </Channel>
+ <Channel Name="Dimmer">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255">Dimmer (0-100%)</Capability>
+ </Channel>
+ <Mode Name="Default">
+  <Channel Number="0">Control</Channel>
+  <Channel Number="1">Dimmer</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="1600" ColourTemperature="4000"/>
+  <Dimensions Weight="1" Width="238" Height="220" Depth="140"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="32" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
